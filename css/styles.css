@@ -1,0 +1,117 @@
+#ppal{
+    width: 100%;
+    height: 920px;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    background-color: yellow;
+}
+#banner{
+    height: 200px;
+}
+#banner > a > img{
+    width: 100%;
+    height: 100%;
+}
+#barranav {
+    height: 100px;
+    background-color: gray;
+}
+#texto{
+    margin-left: 10%;
+}
+#imagenes{
+    margin-left: 2.5%;   
+}
+#video{
+    margin-left: 2.5%;
+}
+#piepagina {
+    height: 150px;
+    float: left;
+}
+ #texto{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    overflow: scroll;
+    box-sizing: border-box;
+ }
+  .bannerbarranavpie{
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10%;
+  }
+ .textoimagenesvideos{
+    width: 25%;
+    height: 300px;
+    background-color: gray;
+    margin-top: 30px;
+    float: left;
+ }
+ .bordes{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(0, 183, 255);
+ }
+ .imgcuerpo{
+    width: 100%;
+    height: 125px;
+    display: block;
+}
+#video > iframe{
+    width: 100%;
+    height: 100%;
+}
+#infoempresa{
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: blue;
+}
+#redessociales{
+    float: right;
+    width: 50%;
+    margin-top: -118px;
+    margin-right: 20px;
+}
+/*media query*/
+/*cuando la pantalla tenga 700px o menos, aplique lo siguiente*/
+@media (max-width: 700px){
+    /*#ppal #barranav{
+    background: orange;
+    border-radius: 10px;
+    }
+    #texto{
+        background-color: gray;
+        font-size: 20px;
+    }*/
+    #texto, #imagenes, #video{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #ppal{
+        height: 1500px;
+    }
+    #texto{
+        background-color: aquamarine;
+    }
+}
+/*Formulario plan turismo*/
+.plancontainer{
+    text-align: center;
+    width: 60%;
+    height: 500px;
+    border-width: 3px;
+    border-color: blue;
+    border-style: solid;
+    margin-left: 20%;
+    padding-left: 20px;
+}
+.plancontainer h2{
+    text-align: center;
+}
+
+.botones{
+    margin-top: 50px;
+}
