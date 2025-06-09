@@ -14,19 +14,77 @@
         <form>
             <label for="nombrecompleto">Nombre completo</label>
             <div>
-                <input 
-                type="text" 
-                id="nombrecompleto" 
-                name="nombrecompleto" 
-                placeholder="ingrese su nombre completo"
-                size="30px"
-                minlength="2"
-                maxlength="500"
-                required
-                >
+                <input type="text" id="nombrecompleto" name="nombrecompleto" placeholder="ingrese su nombre completo"
+                    size="30px" minlength="2" maxlength="500" required pattern="[A-Zaóúéíá-Z+$]"
+                    title="Solo se pueden ingresar letras y/o espacios" autofocus autocomplete="off">
             </div>
+            <label for="email">Correo</label>
             <div>
-                <button class="botones">Enviar</button>
+                <input type="text" id="correoelectronico" name="correoelectronico" placeholder="ingrese su correo"
+                    size="30px" minlength="10" maxlength="60" required type="email"
+                    title="Solo se pueden ingresar letras y/o espacios" autofocus autocomplete="off">
+            </div>
+            <label for="destino">Destino</label>
+            <div>
+                <select name="destino" id="destino">
+                    <option value="" style="display:none">Seleccione un destino</option>
+
+                    <optgroup label="Region caribe">
+                        <option value="cartagena">cartagena</option>
+                        <option value="santamarta">santa marta</option>
+                        <option value="altaguajira">alta guajira</option>
+                    </optgroup>
+
+                    <optgroup label="Otra cosa">
+                        <option value="cartagena">cartagena</option>
+                        <option value="santamarta">santa marta</option>
+                        <option value="altaguajira">alta guajira</option>
+                    </optgroup label="otro lado">
+
+                    <optgroup label="Otra parte">
+                        <option value="cartagena">cartagena</option>
+                        <option value="santamarta">santa marta</option>
+                        <option value="altaguajira">alta guajira</option>
+                    </optgroup>
+
+                </select>
+            </div>
+            <label for="">Fecha de salida</label>
+            <div>
+                <input type="date" name="fechasalida" id="fechasalida" required min="2025-06-12" max="2025-20-06">
+            </div>
+            <label for="">Numero de personas</label>
+            <div>
+                <input type="number" name="numeropersonas" id="numeropersonas" min="2" max="10" step="2" placeholder="ingrese numero de personas" required>
+            </div>
+            <label for="">Forma de pago</label>
+            <div>
+                <div> <input type="radio" name="formapago" id="contado">Contado</div>
+                <div> </div><input type="radio" name="formapago" id="credito">Credito</div>
+                <div> </div><input type="radio" name="formapago" id="Nequi">Nequi</div>
+            </div>
+            <label for="">adicionales</label>
+            <div>
+                isla <input
+                type="checkbox"
+                name="isla"
+                id="isla">
+                discoteca<input
+                type="checkbox"
+                name="discoteca"
+                id="discoteca">
+                tour<input
+                type="checkbox"
+                name="tour"
+                id="tour">
+        </div>
+        <label for="">comentarios</label>
+        <div>
+            <textarea name="comentarios" id="comentarios" placeholder="ingrese sus comentarios" cols="100" rows="10" style="resize: none;"></textarea>
+        </div>
+            <div>
+                <button type="submit" class="botones">Enviar</button>
+                <button type="reset">limpiar datos</button>
             </div>
         </form>
     </div>

@@ -101,7 +101,7 @@
 .plancontainer{
     text-align: center;
     width: 60%;
-    height: 500px;
+    height: auto;
     border-width: 3px;
     border-color: blue;
     border-style: solid;
